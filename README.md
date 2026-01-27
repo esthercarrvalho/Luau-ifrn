@@ -10,3 +10,10 @@ Representante: Anne Julie
 https://www.figma.com/design/yM0bkkJpviOoqHBGazBv7S/hotsite?node-id=5-323&t=gt1DiJ3R2gjZH1tR-1
 ## 🔗 Deploy do Projeto
 https://luau-ifrn.vercel.app
+
+
+
+
+
+
+Atualização para novo deploy - 27/01/2026
