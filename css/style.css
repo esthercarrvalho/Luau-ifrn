@@ -71,7 +71,7 @@ nav.scrolled{
 
 .hero{
   height:100vh;
-  background:url('img/Rectangle 2.png') center/cover no-repeat;
+  background:url('../img/Rectangle 2.png') center/cover no-repeat;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -190,7 +190,7 @@ nav.scrolled{
 
 .atracao{
   height:65vh;
-  background:url("img/Rectangle 4.png") center/cover no-repeat;
+  background:url("../img/Rectangle 4.png") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -253,7 +253,7 @@ nav.scrolled{
 /* ================= PARTICIPE / INSCRIÇÃO ================= */
 
 .participar{
-  background:url('img/luaa.jpg') center/cover no-repeat;
+  background:url('../img/luaa.jpg') center/cover no-repeat;
   padding:90px 0;
   text-align:center;
 }
