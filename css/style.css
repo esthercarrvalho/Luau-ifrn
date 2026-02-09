@@ -1,68 +1,234 @@
-:root {
-    --primary-orange: #f37021;
-    --dark-blue: #000F31;
-    --bege-light: #fce4c4;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
-body { background: var(--dark-blue); color: white; scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
 
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
 
-/* NAVBAR */
-.navbar { position: fixed; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 100; background: rgba(0,0,0,0.8); }
-.navbar a { color: white; text-decoration: none; font-size: 0.8rem; font-weight: 700; margin-left: 20px; text-transform: uppercase; }
-.btn-nav { background: var(--primary-orange); padding: 10px 20px; border-radius: 5px; }
+header img {
+  height: 45px;
+}
 
-/* SEÇÕES GERAIS */
-section { min-height: 100vh; display: flex; align-items: center; background-size: cover; background-position: center; padding: 80px 0; }
-.title-section { font-size: 2.2rem; font-weight: 900; margin-bottom: 20px; text-align: center; }
+nav {
+  display: flex;
+  gap: 20px;
+}
 
-/* HERO - IMAGEM DA PRAIA */
-.hero-section { background-image: linear-gradient(rgba(0,15,49,0.4), var(--dark-blue)), url('../img/fundo_home.jpg'); text-align: center; }
-.hero-container h1 { font-size: 4rem; font-weight: 900; }
-.hero-container .subtitle { font-size: 1.2rem; letter-spacing: 8px; margin-bottom: 40px; }
-.timer-placeholder { background: rgba(255,255,255,0.05); padding: 80px; border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; margin-bottom: 40px; color: rgba(255,255,255,0.5); font-size: 1.5rem; }
-.hero-footer-grid { display: flex; justify-content: space-between; align-items: flex-end; }
-.btn-main { background: var(--primary-orange); color: white; padding: 15px 40px; border-radius: 5px; text-decoration: none; font-weight: 900; }
-.event-info-box { border: 2px solid #555; padding: 15px 30px; border-radius: 50px; text-align: left; font-size: 0.9rem; line-height: 1.4; }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-/* SOBRE - CARD CENTRALIZADO */
-.about-section { background-color: var(--dark-blue); }
-.glass-card-center { max-width: 800px; margin: 0 auto; background: rgba(255, 255, 255, 0.03); padding: 50px; border-radius: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
-.glass-card-center p { margin-bottom: 20px; line-height: 1.8; font-size: 1.1rem; }
+nav a:hover {
+  color: #ff7a00;
+}
 
-/* ATRAÇÃO - IMAGEM DO ARTISTA */
-.artist-section { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/luan_santana.jpg'); }
-.artist-text-overlay { max-width: 600px; }
-.artist-text-overlay .label { color: var(--primary-orange); font-weight: 800; letter-spacing: 2px; }
-.artist-text-overlay h2 { font-size: 3rem; font-weight: 900; margin: 10px 0; }
-.artist-text-overlay p { line-height: 1.7; font-size: 1.1rem; }
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.9)),
+              url('../img/bg-luau.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 40px;
+  text-align: center;
+}
 
-/* PROGRAMAÇÃO - PILLS */
-.schedule-section { text-align: center; background-color: var(--dark-blue); }
-.subtitle-small { margin-bottom: 50px; opacity: 0.8; }
-.pills-container { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.pill-item { flex: 1; min-width: 150px; }
-.pill-item span { display: block; font-size: 0.8rem; margin-bottom: 15px; font-weight: 600; }
-.pill-box { background: var(--bege-light); color: black; padding: 12px; border-radius: 50px; font-weight: 900; }
+.hero h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+}
 
-/* INSCRIÇÃO - IMAGEM DA LUA */
-.signup-section { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/fundo_lua.jpg'); }
-.signup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 40px; }
-.signup-text { font-size: 1.2rem; line-height: 1.6; }
-.signup-form { background: rgba(0, 15, 49, 0.9); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); }
-.signup-form h3 { margin-bottom: 25px; }
-.signup-form input { width: 100%; padding: 15px; margin-bottom: 10px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 5px; }
-.btn-submit { width: 100%; padding: 15px; background: transparent; border: 2px solid var(--primary-orange); color: var(--primary-orange); font-weight: 900; border-radius: 50px; cursor: pointer; }
-.form-disclaimer { font-size: 0.8rem; margin-top: 15px; opacity: 0.5; text-align: right; }
+.hero h2 {
+  font-size: 2rem;
+  color: #ff7a00;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.time-box {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 70px;
+}
+
+.time-box h3 {
+  font-size: 1.5rem;
+}
+
+.hero-actions button {
+  padding: 12px 25px;
+  background: #ff7a00;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-actions button:hover {
+  opacity: 0.9;
+}
+
+.hero-info {
+  margin-top: 15px;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sobre h3 {
+  color: #ff7a00;
+  margin-bottom: 15px;
+}
+
+.atracao {
+  background-image: url("../img/atracao.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  max-width: 900px;
+  text-align: center;
+}
+
+
+
+.overlay h2 {
+  color: #ff7a00;
+  font-size: 2.5rem;
+}
+
+/* PROGRAMAÇÃO */
+.programacao {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.programacao-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.item {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hora {
+  font-size: 1.3rem;
+  color: #ff7a00;
+}
+
+/* PARTICIPAR */
+.participar {
+  padding: 80px 20px;
+  background: #111;
+}
+
+.participar-conteudo {
+  display: flex;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.participar-formulario input,
+.participar-formulario button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.participar-formulario button {
+  background: #ff7a00;
+  color: #fff;
+  cursor: pointer;
+}
 
 /* FOOTER */
-.footer { padding: 50px 0; background: #00081a; border-top: 1px solid rgba(255,255,255,0.05); }
-.footer-grid { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; opacity: 0.7; }
-.footer-logo { font-size: 1.2rem; opacity: 1; }
+footer {
+  padding: 30px 20px;
+  background: #000;
+}
 
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+footer img {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVO */
 @media (max-width: 768px) {
-    .signup-grid, .hero-footer-grid { flex-direction: column; text-align: center; gap: 30px; }
-    .hero-footer-grid { align-items: center; }
+
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  #countdown {
+    flex-wrap: wrap;
+  }
+
+  .programacao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .participar-conteudo {
+    flex-direction: column;
+  }
 }

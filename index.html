@@ -1,118 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Luau IFRN 2026</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luau do IFRN</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- FONTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-    <div class="logo">LUAU <strong>IFRN</strong></div>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#evento">Evento</a>
-        <a href="#programacao">Programação</a>
-        <a href="#ingressos">Ingressos</a>
-        <a href="#ingressos" class="btn-nav">Inscrição</a>
-    </nav>
+<header>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo Luau IFRN">
+  </div>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Evento</a>
+    <a href="#programacao">Programação</a>
+    <a href="#ingressos">Ingressos</a>
+  </nav>
 </header>
 
-<section id="inicio" class="hero-section">
-    <div class="container hero-container">
-        <h1>LUAU DO IFRN</h1>
-        <p class="subtitle">LUAN SANTANA</p>
-        
-        <div class="timer-placeholder">
-            <span>Contagem regressiva</span>
-        </div>
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
 
-        <div class="hero-footer-grid">
-            <a href="#ingressos" class="btn-main">Garanta sua vaga</a>
-            <div class="event-info-box">
-                Data: 17/02 <br>
-                Local: Genipabu
-            </div>
-        </div>
+    <div class="hero-titles">
+      <h1>LUAU DO IFRN</h1>
+      <h2>LUAN SANTANA</h2>
     </div>
+
+    <div id="countdown"></div>
+
+    <div class="hero-actions">
+      <button type="button" id="btnHero">Garanta sua vaga</button>
+
+      <div class="hero-info">
+        <p>Data: 17/02</p>
+        <p>Local: Genipabu</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<section id="evento" class="about-section">
-    <div class="container">
-        <div class="glass-card-center">
-            <h2 class="title-section">SOBRE O LUAU</h2>
-            <p>O Luau IFRN é um evento especial pensado para celebrar a música, a convivência e a cultura jovem em um ambiente descontraído e acolhedor. Inspirado nos clássicos luaus à beira-mar, o festival traz iluminação temática, decoração envolvente e uma programação musical de alto impacto.</p>
-            <p>Mais do que um show, o Luau é um encontro para viver o presente, curtir com os amigos e criar memórias em uma noite diferente de tudo o que você já viu no campus.</p>
-        </div>
-    </div>
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="box-text">
+    <h3>SOBRE O LUAU</h3>
+    <p>
+      O Luau IFRN é um evento especial pensado para celebrar a música, a convivência e a cultura jovem em um ambiente descontraído e acolhedor. Inspirado nos clássicos luaus à beira-mar, o festival traz iluminação temática, decoração envolvente e uma programação musical de alto impacto.
+      <br><br>
+      Mais do que um show, o Luau é um encontro para viver o presente, curtir com os amigos e criar memórias em uma noite diferente de tudo o que você já viu no campus.
+    </p>
+  </div>
 </section>
 
-<section id="atracao" class="artist-section">
-    <div class="container artist-content">
-        <div class="artist-text-overlay">
-            <span class="label">ATRAÇÃO PRINCIPAL</span>
-            <h2>LUAN SANTANA</h2>
-            <p>Um dos maiores nomes da música brasileira sobe ao palco do Luau IFRN para um show especial. Com sucessos que marcaram gerações, Luan Santana promete emocionar, cantar junto com o público e transformar a noite em um espetáculo inesquecível. Prepare-se para cantar, sentir e viver cada momento.</p>
-        </div>
-    </div>
+<!-- ATRAÇÃO -->
+<section class="atracao">
+  <div class="overlay">
+    <h3>ATRAÇÃO PRINCIPAL</h3>
+    <h2>LUAN SANTANA</h2>
+    <p>
+      Um dos maiores nomes da música brasileira sobe ao palco do Luau IFRN para um show especial. Com sucessos que marcaram gerações, Luan Santana promete emocionar, cantar junto com o público e transformar a noite em um espetáculo inesquecível.
+      Prepare-se para cantar, sentir e viver cada momento.
+    </p>
+  </div>
 </section>
 
-<section id="programacao" class="schedule-section">
-    <div class="container">
-        <h2 class="title-section">PROGRAMAÇÃO</h2>
-        <p class="subtitle-small">Confira o que te espera durante a noite:</p>
-        
-        <div class="pills-container">
-            <div class="pill-item">
-                <span>Abertura dos portões</span>
-                <div class="pill-box">16:30h</div>
-            </div>
-            <div class="pill-item">
-                <span>Roda de músicas</span>
-                <div class="pill-box">17:00h</div>
-            </div>
-            <div class="pill-item">
-                <span>Show principal: Luan Santana</span>
-                <div class="pill-box">19:00h</div>
-            </div>
-            <div class="pill-item">
-                <span>Encerramento</span>
-                <div class="pill-box">00:00h</div>
-            </div>
-        </div>
+<!-- PROGRAMAÇÃO -->
+<section class="programacao" id="programacao">
+  <h3>PROGRAMAÇÃO</h3>
+  <p class="subtitulo">Confira como será a sequência do nosso luau</p>
+
+  <div class="programacao-grid">
+    <div class="item">
+      <p>Abertura</p>
+      <div class="hora">16:30h</div>
     </div>
+
+    <div class="item">
+      <p>Roda de músicas</p>
+      <div class="hora">17:00h</div>
+    </div>
+
+    <div class="item">
+      <p>Show principal</p>
+      <div class="hora">19:00h</div>
+    </div>
+
+    <div class="item">
+      <p>Encerramento</p>
+      <div class="hora">00:00h</div>
+    </div>
+  </div>
 </section>
 
-<section id="ingressos" class="signup-section">
-    <div class="container">
-        <h2 class="title-section">PARTICIPE DO EVENTO</h2>
-        <div class="signup-grid">
-            <div class="signup-text">
-                <p>As vagas são limitadas. Garanta sua participação no Luau IFRN e não fique de fora dessa noite especial. Basta preencher o formulário abaixo para confirmar sua presença.</p>
-            </div>
-            <div class="signup-form">
-                <h3>Inscrição</h3>
-                <form>
-                    <input type="text" placeholder="Nome completo">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Turma">
-                    <button type="button" class="btn-submit">Enviar inscrição</button>
-                </form>
-                <p class="form-disclaimer">Evento sujeito à lotação máxima do espaço.</p>
-            </div>
-        </div>
+<!-- INSCRIÇÃO -->
+<section id="ingressos" class="participar">
+
+  <h2 class="participar-titulo">PARTICIPE DO EVENTO</h2>
+
+  <div class="participar-conteudo">
+
+    <div class="participar-texto">
+      <p>
+        As vagas são limitadas. Garanta sua participação no Luau IFRN e não fique
+        fora dessa noite especial. Basta preencher o formulário abaixo para
+        confirmar sua presença.
+      </p>
     </div>
+
+    <div class="participar-formulario">
+      <h3>Inscrição</h3>
+
+      <form id="formInscricao">
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="text" placeholder="Turma" required>
+        <button type="submit">Enviar inscrição</button>
+      </form>
+    </div>
+
+  </div>
+
+  <p class="participar-rodape">
+    Evento sujeito à lotação máxima do espaço.
+  </p>
+
 </section>
 
-<footer class="footer">
-    <div class="container footer-grid">
-        <div class="footer-logo">LUAU <strong>IFRN</strong></div>
-        <div class="footer-copy">Luau IFRN 2026 — Todos os direitos reservados.</div>
-        <div class="footer-credits">Evento cultural realizado no IFRN • Design acadêmico • Projeto UI/UX</div>
-    </div>
+<footer>
+  <div class="footer-container">
+    <img src="img/logo.pngs" alt="Logo Luau IFRN">
+
+    <p class="footer-centro">
+      Luau IFRN 2026 — Todos os direitos reservados
+    </p>
+
+    <p class="footer-direita">
+      Evento cultural realizado no IFRN • Design acadêmico • Projeto UI/UX
+    </p>
+  </div>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
