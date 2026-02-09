@@ -17,3 +17,6 @@
 
 ## 🌐 Deploy do Projeto
 [Site Online - Luau IFRN](https://hotsite-evento.vercel.app/)
+
+## Link do slide 
+[Canva - Slide de defesa] https://www.canva.com/design/DAHAys9scr4/VkDDcqx-zPmlguYmPGb20A/edit?utm_content=DAHAys9scr4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
