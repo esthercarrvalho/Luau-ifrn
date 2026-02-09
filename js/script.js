@@ -56,6 +56,29 @@ if(botaoHero){
 }
 
 
+
+/* =====================================================
+   FORMULÁRIO — FEEDBACK BONITO
+===================================================== */
+const form = document.getElementById('formInscricao');
+const msg = document.getElementById('msg');
+
+if(form){
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(msg){
+      msg.innerText = "Inscrição enviada com sucesso! Nos vemos no Luau!";
+      msg.style.marginTop = "15px";
+      msg.style.color = "#ff7a00";
+    }
+
+    form.reset();
+  });
+}
+
+});
+
 /* =====================================================
    SCROLL SUAVE DO MENU
 ===================================================== */
@@ -97,27 +120,4 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('section').forEach(sec => {
   sec.classList.add('hidden');
   observer.observe(sec);
-});
-
-
-/* =====================================================
-   FORMULÁRIO — FEEDBACK BONITO
-===================================================== */
-const form = document.getElementById('formInscricao');
-const msg = document.getElementById('msg');
-
-if(form){
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-
-    if(msg){
-      msg.innerText = "Inscrição enviada com sucesso! 🌴 Nos vemos no Luau!";
-      msg.style.marginTop = "15px";
-      msg.style.color = "#ff7a00";
-    }
-
-    form.reset();
-  });
-}
-
 });
